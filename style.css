@@ -129,3 +129,46 @@ padding:0 20px;
 .section h2{
 margin-bottom:15px;
 }
+/* DASHBOARD */
+
+.dashboard{
+max-width:600px;
+margin:50px auto;
+}
+
+.progress{
+display:flex;
+justify-content:space-between;
+margin:30px 0;
+}
+
+.step{
+width:40px;
+height:40px;
+border-radius:50%;
+background:#ddd;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+
+.step.active{
+background:#6c63ff;
+color:white;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card input{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}

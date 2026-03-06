@@ -384,6 +384,41 @@ border-radius:14px;
 box-shadow:0 15px 40px rgba(0,0,0,0.08);
 overflow-x:auto;
 }
+/* ADMIN TABLE */
+
+.admin-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.admin-table th,
+.admin-table td{
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+}
+
+.admin-table th{
+background:#6366f1;
+color:white;
+}
+
+/* ADMIN BUTTON */
+
+.approve-btn{
+background:#22c55e;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+font-size:12px;
+}
+
+.approve-btn:hover{
+background:#16a34a;
+}
 
 
 

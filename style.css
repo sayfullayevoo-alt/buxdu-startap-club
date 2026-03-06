@@ -253,15 +253,20 @@ margin-top:10px;
 .box button{
 margin-top:10px;
 }
-.logo{
+/* LOGO FIX */
+
+.header{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:30px;
-margin:20px 0;
+gap:40px;
+margin:40px 0;
+flex-wrap:wrap;
 }
 
-.logo img{
-height:70px;
+.logo{
+max-height:80px;
 width:auto;
 }
+
+

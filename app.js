@@ -71,4 +71,22 @@ localStorage.setItem("startupIdea", idea);
 alert("G'oya saqlandi!");
 
 }
+const checkboxes = document.querySelectorAll('.stage input[type="checkbox"]');
+const steps = document.querySelectorAll('.step');
+
+checkboxes.forEach((checkbox, index) => {
+
+checkbox.addEventListener("change", () => {
+
+if(checkbox.checked){
+checkbox.closest(".stage").classList.add("completed");
+steps[index].classList.add("active");
+}else{
+checkbox.closest(".stage").classList.remove("completed");
+steps[index].classList.remove("active");
+}
+
+});
+
+});
 

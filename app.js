@@ -57,4 +57,18 @@ alert("Iltimos g'oyangizni yozing")
 
 }
 
+function saveIdea(){
+
+let idea = document.getElementById("ideaText").value;
+
+if(idea === ""){
+alert("G'oya yozing!");
+return;
 }
+
+localStorage.setItem("startupIdea", idea);
+
+alert("G'oya saqlandi!");
+
+}
+

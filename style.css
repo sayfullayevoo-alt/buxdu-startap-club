@@ -273,5 +273,38 @@ gap:20px;
 }
 
 }
+/* HERO LAYOUT */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+padding:40px 20px;
+}
+
+.hero-logo{
+max-width:320px;
+height:auto;
+}
+
+.container{
+max-width:420px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+}
+
+.hero-logo{
+max-width:220px;
+}
+
+}
 
 

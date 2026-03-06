@@ -47,9 +47,9 @@
 <script>
 
 /* GOOGLE SHEETS CSV LINK */
-/* BU YERGA KEYIN SHEETS LINK QO'YAMIZ */
 
-const sheetURL = "SHEETS_LINKNI_BU_YERGA_QO'YAMIZ"
+const sheetURL =
+"https://docs.google.com/spreadsheets/d/e/2PACX-1vQc3WU4jgfLzDIlvMCbY8_AOzMPawkD32qpg5gPYAMvINVfqlIGvV44GrlJU6mop2u84CRVY_LeuIcF/pub?output=csv"
 
 fetch(sheetURL)
 .then(res => res.text())
@@ -98,7 +98,7 @@ table.appendChild(tr)
 
 })
 
-/* TASDIQLASH BUTTON */
+/* TASDIQLASH */
 
 function approve(button){
 
@@ -114,13 +114,13 @@ function updateProgress(button){
 
 const row = button.closest("tr")
 
-const checks = row.querySelectorAll("td")
+const cells = row.querySelectorAll("td")
 
 let done = 0
 
 for(let i=2;i<=6;i++){
 
-if(checks[i].innerText === "✔"){
+if(cells[i].innerText === "✔"){
 done++
 }
 

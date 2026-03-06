@@ -268,5 +268,22 @@ flex-wrap:wrap;
 max-height:80px;
 width:auto;
 }
+.admin-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.admin-table th,
+.admin-table td{
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+}
+
+.admin-table th{
+background:#6366f1;
+color:white;
+}
 
 

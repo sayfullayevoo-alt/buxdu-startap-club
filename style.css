@@ -304,6 +304,34 @@ text-align:center;
 background:#6366f1;
 color:white;
 }
+/* PROGRESS INDICATOR */
+
+.progress-bar{
+display:flex;
+justify-content:space-between;
+margin:25px 0 35px 0;
+}
+
+.step{
+width:22px;
+height:22px;
+border-radius:50%;
+background:#d1d5db;
+transition:0.3s;
+}
+
+.step.active{
+background:#22c55e;
+}
+.stage.completed{
+border:2px solid #22c55e;
+background:#f0fdf4;
+}
+
+.stage.completed label{
+color:#16a34a;
+font-weight:700;
+}
 
 
 

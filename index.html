@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuxDU Startap Klubi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#about">Biz haqimizda</a>
+    <a href="#contact">Bog‘lanish</a>
+    <a href="#register">Ro‘yxatdan o‘tish</a>
+</nav>
+
+<div class="container" id="register">
+
+    <div class="logo">
+        <img src="./logo.png" alt="BuxDU Logo">
+        <img src="./logo2.png" alt="Startap Club Logo">
+    </div>
+
+    <h1>BuxDU Startap Klubiga Ro'yxatdan O'tish</h1>
+
+    <div class="telegram-link">
+        <a href="https://t.me/iiLmiy_tadqiqot_startap" target="_blank">
+            📢 Telegram kanalimizga qo‘shiling
+        </a>
+    </div>
+
+    <!-- NETLIFY FORM -->
+    <form name="registration" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="registration">
+
+        <input type="text" name="fio" placeholder="F.I.O" required>
+
+        <select name="fakultet" required>
+            <option value="">Fakultetni tanlang</option>
+            <option>Fizika-matematika va axborot texnologiyalari</option>
+            <option>Tabiiy fanlar va agrobiotexnologiyalar</option>
+            <option>Xorijiy tillar</option>
+            <option>Filologiya</option>
+            <option>Tarix va yuridik</option>
+            <option>Jismoniy tarbiya va sport</option>
+            <option>Iqtisodiyot va turizm</option>
+            <option>San'atshunoslik va pedagogika</option>
+        </select>
+
+        <select name="kurs" required>
+            <option value="">Kursni tanlang</option>
+            <option>1-kurs (Bakalavr)</option>
+            <option>2-kurs (Bakalavr)</option>
+            <option>3-kurs (Bakalavr)</option>
+            <option>4-kurs (Bakalavr)</option>
+            <option>1-kurs (Magistratura)</option>
+            <option>2-kurs (Magistratura)</option>
+        </select>
+
+        <input type="tel" name="telefon" placeholder="Telefon raqam" required>
+        <input type="text" name="telegram" placeholder="Telegram username (@username)" required>
+
+        <textarea name="goya" placeholder="Startap g'oyangiz haqida qisqacha yozing..." required></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" required>
+            <label>
+                Men <a href="oferta.html" target="_blank">oferta shartlariga</a> roziman
+            </label>
+        </div>
+
+        <button type="submit">Ro'yxatdan o'tish</button>
+    </form>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>Biz haqimizda</h2>
+
+    <p>
+        Buxoro davlat universiteti Ilmiy-innovatsion ishlanmalarni tijoratlashtirish
+        bo‘limi huzurida 2023–2025-yillardan boshlab talabalarning startap
+        tashabbuslarini qo‘llab-quvvatlash maqsadida mazkur Startap Klub faoliyat
+        yuritib kelmoqda.
+    </p>
+
+    <p>
+        Dastlab klub rasmiy tuzilma sifatida emas, balki lavozim doirasida
+        professor-o‘qituvchilarning loyihalari asosida faoliyat olib borgan.
+        Keyinchalik esa talaba-yoshlarning innovatsion startap g‘oyalarini
+        qo‘llab-quvvatlash va ularni rivojlantirish maqsadida mustaqil platforma
+        sifatida o‘z faoliyatini yo‘lga qo‘ydi.
+    </p>
+
+    <p>
+        So‘nggi uch yil davomida talabalar tomonidan ilgari surilgan 50 dan ortiq
+        startap g‘oyalarini loyiha shakliga keltirish uchun mentorlik va amaliy
+        maslahat xizmatlari ko‘rsatildi.
+    </p>
+
+    <p>
+        Klub faoliyatining asosiy maqsadi — talaba-yoshlarning startap
+        loyihalarini milliy va xalqaro darajaga olib chiqishga amaliy yordam
+        ko‘rsatishdan iborat.
+    </p>
+
+    <p>
+        Yil davomida universitet miqyosida talabalarni rag‘batlantirish,
+        istiqbolli loyihalarni saralash hamda yirik tadbirkorlar ishtirokida
+        seminar va treninglar tashkil etib kelinmoqda.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Biz bilan bog‘lanish</h2>
+
+    <p>📞 Telefon:
+        <a href="tel:+998943050927">+998 94 305 09 27</a>
+    </p>
+
+    <p>📧 Email:
+        <a href="mailto:n.f.davronova@buxdu.uz">n.f.davronova@buxdu.uz</a>
+    </p>
+
+    <p>📢 Telegram:
+        <a href="https://t.me/iiLmiy_tadqiqot_startap" target="_blank">
+            @iiLmiy_tadqiqot_startap
+        </a>
+    </p>
+</section>
+
+</body>
+</html>

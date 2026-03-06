@@ -23,7 +23,6 @@
 <table class="admin-table">
 
 <tr>
-
 <th>F.I.O</th>
 <th>Startup g'oyasi</th>
 <th>Boshlang'ich a'zo</th>
@@ -32,7 +31,6 @@
 <th>MVP</th>
 <th>Investitsiya</th>
 <th>Progress</th>
-
 </tr>
 
 <tr>
@@ -42,16 +40,20 @@
 
 <td>✔</td>
 <td>✔</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
 
 <td>
-<div class="progress">
-<div class="progress-bar" style="width:40%"></div>
-</div>
-40%
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
 </td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>40%</td>
 
 </tr>
 
@@ -63,21 +65,32 @@
 <td>✔</td>
 <td>✔</td>
 <td>✔</td>
-<td>❌</td>
-<td>❌</td>
 
 <td>
-<div class="progress">
-<div class="progress-bar" style="width:60%"></div>
-</div>
-60%
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
 </td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>60%</td>
 
 </tr>
 
 </table>
 
 </div>
+
+<script>
+
+function approve(button){
+
+button.parentElement.innerHTML = "✔";
+
+}
+
+</script>
 
 </body>
 

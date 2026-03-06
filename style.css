@@ -305,7 +305,46 @@ flex-direction:column;
 max-width:220px;
 }
 
+}/* HERO SECTION FIX */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+padding:40px 20px;
+max-width:1200px;
+margin:auto;
 }
+
+.hero-logo{
+max-width:280px;
+height:auto;
+}
+
+.container{
+max-width:420px;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-logo{
+max-width:200px;
+}
+
+}
+
 
 
 

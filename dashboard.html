@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 <head>
-<title>Startup Club Dashboard</title>
+<meta charset="UTF-8">
+<title>Startup Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,27 +10,84 @@
 
 <div class="dashboard">
 
-<h1>🚀 Startup Club</h1>
+<h1>🚀 Startup Development Bosqichlari</h1>
 
-<div class="progress">
+<!-- 1 BOSQICH -->
 
-<div class="step active">1</div>
-<div class="step">2</div>
-<div class="step">3</div>
-<div class="step">4</div>
-<div class="step">5</div>
-
+<div class="stage">
+<label>
+<input type="checkbox" id="stage1">
+<b>1-bosqich: Boshlang'ich a'zo</b>
+</label>
 </div>
 
-<div class="card">
+<!-- 2 BOSQICH -->
 
-<h2>1-bosqich: Boshlang'ich a'zo</h2>
-<p>Startup g'oyangizni kiriting</p>
+<div class="stage">
+<label>
+<input type="checkbox" id="stage2">
+<b>2-bosqich: G'oya bosqichi</b>
+</label>
 
-<input id="idea" placeholder="Startup g'oyangiz">
+<div class="box">
+<p>Startup g'oyangizni yozing:</p>
 
-<button onclick="submitIdea()">G'oya yuborish</button>
+<textarea id="ideaText"
+placeholder="Startup g'oyangizni yozing..."></textarea>
 
+<button onclick="saveIdea()">G'oyani saqlash</button>
+
+</div>
+</div>
+
+<!-- 3 BOSQICH -->
+
+<div class="stage">
+<label>
+<input type="checkbox" id="stage3">
+<b>3-bosqich: Loyiha shakli</b>
+</label>
+
+<div class="box">
+<p>Loyiha taqdimotini yuklang (PDF / PPT)</p>
+
+<input type="file">
+
+</div>
+</div>
+
+<!-- 4 BOSQICH -->
+
+<div class="stage">
+<label>
+<input type="checkbox" id="stage4">
+<b>4-bosqich: MVP</b>
+</label>
+
+<div class="box">
+
+<p>MVP videosi yoki link</p>
+
+<input type="text" placeholder="Video link">
+
+</div>
+</div>
+
+<!-- 5 BOSQICH -->
+
+<div class="stage">
+<label>
+<input type="checkbox" id="stage5">
+<b>5-bosqich: Grant / Investitsiya</b>
+</label>
+
+<div class="box">
+
+<p>So'rovnoma natijalari / MVP sotuvlari / video yuklang</p>
+
+<input type="file">
+
+</div>
 </div>
 
 </div>

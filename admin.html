@@ -17,10 +17,11 @@
 <div class="dashboard">
 
 <h1>📊 Startup Club Admin Panel</h1>
-
 <h3>Foydalanuvchilar bosqichlari</h3>
 
 <table class="admin-table">
+
+<thead>
 
 <tr>
 <th>F.I.O</th>
@@ -33,50 +34,11 @@
 <th>Progress</th>
 </tr>
 
-<tr>
+</thead>
 
-<td>Ali Valiyev</td>
-<td>AI Startup</td>
+<tbody id="adminData">
 
-<td>✔</td>
-<td>✔</td>
-
-<td>
-<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
-</td>
-
-<td>
-<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
-</td>
-
-<td>
-<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
-</td>
-
-<td>40%</td>
-
-</tr>
-
-<tr>
-
-<td>Madina Karimova</td>
-<td>AgroTech Platform</td>
-
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-
-<td>
-<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
-</td>
-
-<td>
-<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
-</td>
-
-<td>60%</td>
-
-</tr>
+</tbody>
 
 </table>
 
@@ -84,14 +46,93 @@
 
 <script>
 
+/* GOOGLE SHEETS CSV LINK */
+/* BU YERGA KEYIN SHEETS LINK QO'YAMIZ */
+
+const sheetURL = "SHEETS_LINKNI_BU_YERGA_QO'YAMIZ"
+
+fetch(sheetURL)
+.then(res => res.text())
+.then(data => {
+
+const rows = data.split("\n").slice(1)
+
+rows.forEach(row => {
+
+const cols = row.split(",")
+
+const table = document.getElementById("adminData")
+
+const tr = document.createElement("tr")
+
+tr.innerHTML = `
+
+<td>${cols[0]}</td>
+<td>${cols[5]}</td>
+
+<td>✔</td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>
+<button class="approve-btn" onclick="approve(this)">Tasdiqlash</button>
+</td>
+
+<td>20%</td>
+
+`
+
+table.appendChild(tr)
+
+})
+
+})
+
+/* TASDIQLASH BUTTON */
+
 function approve(button){
 
-button.parentElement.innerHTML = "✔";
+button.parentElement.innerHTML = "✔"
+
+updateProgress(button)
+
+}
+
+/* PROGRESS HISOBLASH */
+
+function updateProgress(button){
+
+const row = button.closest("tr")
+
+const checks = row.querySelectorAll("td")
+
+let done = 0
+
+for(let i=2;i<=6;i++){
+
+if(checks[i].innerText === "✔"){
+done++
+}
+
+}
+
+const percent = Math.round((done/5)*100)
+
+row.cells[7].innerText = percent + "%"
 
 }
 
 </script>
 
 </body>
-
 </html>
